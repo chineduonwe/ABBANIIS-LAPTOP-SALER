@@ -157,6 +157,70 @@ function searchProducts(){
             product.style.display="none";
 
         }
+        <script src="https://js.paystack.co/v1/inline.js"></script>
+
+<button class="btn" onclick="payWithPaystack()">
+    PAY NOW
+</button>
+
+<script>
+function payWithPaystack() {
+
+    let name = document.getElementById("customerName").value;
+    let phone = document.getElementById("phone").value;
+    let laptop = document.getElementById("selectedLaptop").value;
+    let price = document.getElementById("selectedPrice").value;
+
+    if (!name || !phone || !laptop) {
+        alert("Please complete your order details first.");
+        return;
+    }
+
+    let amount = parseInt(
+        price.replace(/[₦,]/g, "")
+    );
+
+    let handler = PaystackPop.setup({
+
+        key: "pk_test_YOUR_PUBLIC_KEY",
+
+        email: "customer@example.com",
+
+        amount: amount * 100,
+
+        currency: "NGN",
+
+        ref: "LAPTOP_" + Date.now(),
+
+        metadata: {
+            customer_name: name,
+            phone: phone,
+            laptop: laptop
+        },
+
+        callback: function(response) {
+
+            alert(
+                "Payment successful!\n\n" +
+                "Reference: " +
+                response.reference
+            );
+
+            // Send reference to your backend
+            // for secure payment verification.
+
+        },
+
+        onClose: function() {
+
+            alert("Payment window closed.");
+
+        }
+
+    });
+
+    handler.openIframe();
+}
 
     });
 
