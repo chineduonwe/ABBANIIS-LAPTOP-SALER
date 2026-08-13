@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ABBANISS LAPTOPS</title>
+<link rel="stylesheet" href="margin.css">
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+    ABBANIS <span>LAPTOPS</span>
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#products">Laptops</a>
+
+        <a href="#orderSection">Order</a>
+
+        <a href="#payment">Payment</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <h1>
+            Buy Quality
+            <span>Laptops</span>
+            With Confidence
+        </h1>
+
+        <p>
+            Welcome to BIN ADAM LAPTOPS.
+            Find quality laptops for students,
+            businesses, offices, programming,
+            education and professional work.
+        </p>
+
+        <a href="#products" class="btn">
+            SHOP NOW
+        </a>
+
+    </div>
+
+
+    <img
+    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+    alt="Laptop">
+
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section>
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">💻</div>
+
+            <h3>Quality Laptops</h3>
+
+            <p>
+                Quality laptops at competitive prices.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">🚚</div>
+
+            <h3>Delivery</h3>
+
+            <p>
+                Delivery available to different locations.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">📦</div>
+
+            <h3>Easy Ordering</h3>
+
+            <p>
+                Select your laptop and provide your location.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">💳</div>
+
+            <h3>Easy Payment</h3>
+
+            <p>
+                Pay conveniently using our payment details.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- LAPTOPS -->
+
+<section id="products">
+
+    <h2 class="section-title">
+        Our Laptops
+    </h2>
+
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="🔎 Search for laptop..."
+        onkeyup="searchProducts()">
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- HP -->
+
+        <div class="product">
+
+            <img
+            src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80"
+            alt="HP Laptop">
+
+            <div class="product-info">
+
+                <h3>HP EliteBook</h3>
+
+                <p>
+                    Core i5 • 8GB RAM • 256GB SSD
+                </p>
+
+                <div class="price">
+                    ₦350,000
+                </div>
+
+                <button
+                class="btn"
+                onclick="buyLaptop(
+                'HP EliteBook',
+                '₦350,000'
+                )">
+
+                    ORDER NOW
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DELL -->
+
+        <div class="product">
+
+            <img
+            src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=800&q=80"
+            alt="Dell Laptop">
+
+            <div class="product-info">
+
+                <h3>Dell Latitude</h3>
+
+                <p>
+                    Core i5 • 8GB RAM • 512GB SSD
+                </p>
+
+                <div class="price">
+                    ₦420,000
+                </div>
+
+                <button
+                class="btn"
+                onclick="buyLaptop(
+                'Dell Latitude',
+                '₦420,000'
+                )">
+
+                    ORDER NOW
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LENOVO -->
+
+        <div class="product">
+
+            <img
+            src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80"
+            alt="Lenovo Laptop">
+
+            <div class="product-info">
+
+                <h3>Lenovo ThinkPad</h3>
+
+                <p>
+                    Core i7 • 16GB RAM • 512GB SSD
+                </p>
+
+                <div class="price">
+                    ₦550,000
+                </div>
+
+                <button
+                class="btn"
+                onclick="buyLaptop(
+                'Lenovo ThinkPad',
+                '₦550,000'
+                )">
+
+                    ORDER NOW
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MACBOOK -->
+
+        <div class="product">
+
+            <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80"
+            alt="MacBook">
+
+            <div class="product-info">
+
+                <h3>Apple MacBook</h3>
+
+                <p>
+                    Apple Silicon • 8GB RAM • 256GB SSD
+                </p>
+
+                <div class="price">
+                    ₦850,000
+                </div>
+
+                <button
+                class="btn"
+                onclick="buyLaptop(
+                'Apple MacBook',
+                '₦850,000'
+                )">
+
+                    ORDER NOW
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ORDER FORM -->
+
+<section id="orderSection">
+
+    <div class="form-container">
+
+        <h2>
+            Complete Your Laptop Order
+        </h2>
+
+
+        <form onsubmit="submitOrder(event)">
+
+
+            <div class="form-group">
+
+                <label>
+                    Customer Name
+                </label>
+
+                <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your full name"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                type="tel"
+                id="phone"
+                placeholder="080xxxxxxxx"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Selected Laptop
+                </label>
+
+                <input
+                type="text"
+                id="selectedLaptop"
+                readonly>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Laptop Price
+                </label>
+
+                <input
+                type="text"
+                id="selectedPrice"
+                readonly>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Country
+                </label>
+
+                <select id="country" required>
+
+                    <option value="">
+                        Select Country
+                    </option>
+
+                    <option>Nigeria</option>
+                    <option>Ghana</option>
+                    <option>Kenya</option>
+                    <option>South Africa</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Saudi Arabia</option>
+                    <option>United Arab Emirates</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- NEW LOCATION FIELD -->
+
+            <div class="form-group">
+
+                <label>
+                    📍 Delivery / Pickup Location
+                </label>
+
+                <input
+                type="text"
+                id="location"
+                placeholder="Enter city, state and delivery location"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Delivery Address / Pickup Details
+                </label>
+
+                <textarea
+                id="address"
+                rows="4"
+                placeholder="Enter your complete address or pickup details"
+                required></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Order Notes
+                </label>
+
+                <textarea
+                id="notes"
+                rows="3"
+                placeholder="Any additional information?"></textarea>
+
+            </div>
+
+
+            <button class="btn">
+                CONTINUE TO PAYMENT
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- PAYMENT -->
+
+<section class="payment" id="payment">
+
+    <h2 class="section-title">
+        Payment Information
+    </h2>
+
+
+    <div class="payment-box">
+
+        <h3>
+            Make Payment
+        </h3>
+
+
+        <div class="account">
+
+            <p>
+                <strong>Payment Platform:</strong>
+                OPay
+            </p>
+
+            <p>
+                <strong>Account Number:</strong>
+                <span id="accountNumber">
+                    8106417282
+                </span>
+            </p>
+
+            <p>
+                <strong>Account Name:</strong>
+                OPay
+            </p>
+
+        </div>
+
+
+        <button
+        class="copy-btn"
+        onclick="copyAccount()">
+
+            COPY ACCOUNT NUMBER
+
+        </button>
+
+
+        <p style="margin-top:20px;line-height:1.6;">
+
+            After making payment, keep your
+            payment receipt and send it to us
+            through WhatsApp together with
+            your order information.
+
+        </p>
+
+
+        <a
+        class="whatsapp"
+        href="https://wa.me/2348035339308"
+        target="_blank">
+
+            📱 SEND ORDER / RECEIPT ON WHATSAPP
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>
+        BIN ADAM LAPTOPS
+    </h2>
+
+    <p>
+        Quality • Affordable • Reliable
+    </p>
+
+    <p>
+        WhatsApp: 08106417281
+    </p>
+
+    <p>
+        © 2026 BIN ADAM LAPTOPS
+    </p>
+
+</footer>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
